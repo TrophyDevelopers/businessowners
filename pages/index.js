@@ -1,9 +1,10 @@
-import Head from 'next/head'
-import Image from 'next/image'
-import { Inter } from '@next/font/google'
-import styles from '../styles/Home.module.css'
+import Head from "next/head";
+import Image from "next/image";
+import Link from "next/link";
+import { Inter } from "@next/font/google";
+import styles from "../styles/Home.module.css";
 
-const inter = Inter({ subsets: ['latin'] })
+const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
   return (
@@ -22,11 +23,11 @@ export default function Home() {
           </p>
           <div>
             <a
-              href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
+              href="https://www.trophydevelopers.com/about-trophy-developers/"
               target="_blank"
               rel="noopener noreferrer"
             >
-              By{' '}
+              By{" "}
               <Image
                 src="/vercel.svg"
                 alt="Vercel Logo"
@@ -60,22 +61,24 @@ export default function Home() {
         </div>
 
         <div className={styles.grid}>
-          <a
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+          <Link href="/hire/next" className={styles.card}>
             <h2 className={inter.className}>
-              Docs <span>-&gt;</span>
+              <span> Docs -&gt;</span>
             </h2>
             <p className={inter.className}>
               Find in-depth information about Next.js features and&nbsp;API.
             </p>
-          </a>
-
+          </Link>
+          <Link href="/hire/Experts" className={styles.card}>
+            <h2 className={inter.className}>
+              <span> Google Ads Pros -&gt;</span>
+            </h2>
+            <p className={inter.className}>
+              Find in-depth information about Next.js features and&nbsp;API.
+            </p>
+          </Link>
           <a
-            href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
+            href="https://www.trophydevelopers.com/"
             className={styles.card}
             target="_blank"
             rel="noopener noreferrer"
@@ -89,7 +92,8 @@ export default function Home() {
           </a>
 
           <a
-            href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
+            title="trophy developers contact "
+            href="https://www.trophydevelopers.com/contact-uganda-website-designers/"
             className={styles.card}
             target="_blank"
             rel="noopener noreferrer"
@@ -103,7 +107,7 @@ export default function Home() {
           </a>
 
           <a
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
+            href="https://www.trophydevelopers.com/website-portfolio/"
             className={styles.card}
             target="_blank"
             rel="noopener noreferrer"
@@ -119,5 +123,5 @@ export default function Home() {
         </div>
       </main>
     </>
-  )
+  );
 }
